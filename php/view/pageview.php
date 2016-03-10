@@ -9,44 +9,46 @@
 class Pageview {
     public function showConnexion() {
         ?>
-        <!-- Debut card -->
-        <div class="card-panel inscription col m4 push-m4 s12 center-align">
-            <!-- Formulaire -->
-            <form id="formula" class="col formulaire s10 push-s1" action="connexion.php" method="POST">
+        <div class="col valign-wrapper">
+            <!-- Debut card -->
+            <div id="content" class="card-panel inscription col m4 push-m4 s12 center-align">
+                <!-- Formulaire -->
+                <form id="formula" class="col formulaire s10 push-s1" action="connexion.php" method="POST">
 
-                <!-- Titre de la carte -->
-                <div class="card-header"> <h2>Connexion</h2></div>
-                <!-- Fin titre -->
+                    <!-- Titre de la carte -->
+                    <div class="card-header"> <h2>Connexion</h2></div>
+                    <!-- Fin titre -->
 
-                <!-- Contenu card -->
-                <div class="card-content">
+                    <!-- Contenu card -->
+                    <div class="card-content">
 
-                    <!-- Identifiant -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="id" type="text" class="validate" name="id" required="required">
-                            <label for="id">Identifiant <em>*</em></label>
-                        </div>
-                    </div><!-- Identifiant -->
+                        <!-- Identifiant -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="id" type="text" class="validate" name="id" required="required">
+                                <label for="id">Identifiant <em>*</em></label>
+                            </div>
+                        </div><!-- Identifiant -->
 
-                    <!-- mot de passe -->
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="passe" type="password" class="validate" name="passe" required="required">
-                            <label for="passe">Mot de passe <em>*</em></label>
-                        </div>
-                    </div><!-- fin mot de passe -->
-                    <div id="result"></div><!-- Retour de l'erreur en json -->
-                </div><!-- Fin contenu card -->
+                        <!-- mot de passe -->
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <input id="passe" type="password" class="validate" name="passe" required="required">
+                                <label for="passe">Mot de passe <em>*</em></label>
+                            </div>
+                        </div><!-- fin mot de passe -->
+                        <div id="result"></div><!-- Retour de l'erreur en json -->
+                    </div><!-- Fin contenu card -->
 
 
-                <!-- bouton s'inscrire -->
-                <div class="card-action bouton-connection">
-                    <input class="btn center-align" type="submit" value="Se connecter"/>
-                </div>
+                    <!-- bouton s'inscrire -->
+                    <div class="card-action bouton-connection">
+                        <input class="btn blue-grey center-align" type="submit" value="Se connecter"/>
+                    </div>
 
-            </form><!-- Fin formulaire -->
-        </div><!-- Fin card -->
+                </form><!-- Fin formulaire -->
+            </div><!-- Fin card -->
+        </div>
         <?php
     } // showConnexion()
 
