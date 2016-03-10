@@ -6,9 +6,8 @@
  * Date: 10/03/2016
  * Time: 15:11
  */
-class Pageview
-{
-    public function showConnexion(){
+class Pageview {
+    public function showConnexion() {
         ?>
         <!-- Debut card -->
         <div class="card-panel inscription col m4 push-m4 s12 center-align">
@@ -16,7 +15,7 @@ class Pageview
             <form id="formula" class="col formulaire s10 push-s1" action="connexion.php" method="POST">
 
                 <!-- Titre de la carte -->
-                <div class="card-header"> <h2>Inscription</h2></div>
+                <div class="card-header"> <h2>Connexion</h2></div>
                 <!-- Fin titre -->
 
                 <!-- Contenu card -->
@@ -49,7 +48,7 @@ class Pageview
             </form><!-- Fin formulaire -->
         </div><!-- Fin card -->
         <?php
-    }
+    } // showConnexion()
 
     /**
      * Includes the head needed by pages
@@ -72,7 +71,8 @@ class Pageview
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </head>
         <?php
-    }
+    } // showHead()
+
 
     /**
      * Includes all javascript's links needed by the pages.
@@ -86,4 +86,4 @@ class Pageview
         <?php
     }
 
-}
+} // class Pageview
