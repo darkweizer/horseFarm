@@ -14,7 +14,7 @@ class Controller
             $this->showMessage("identifiant correcte", "ok");
         }
         else {
-            $this->showMessage("Veillez entrer tout les champs");
+            $this->showMessage("Veuillez entrer tous les champs.");
         }
 
     }
