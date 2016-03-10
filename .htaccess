@@ -9,8 +9,8 @@ RewriteEngine On # Activation de l'URL rewriting
 #RewriteRule ^Directory/$ php/view/index.php [L]
 
 # Redirige vers l'index en cas d'erreur 403 ou 404 (si localhost configuré sur le port 8080)
-ErrorDocument 403 http://localhost:8080/horseFarm/php/view/index.php
-ErrorDocument 404 http://localhost:8080/horseFarm/php/view/index.php
+#ErrorDocument 403 http://localhost:8080/horseFarm/php/view/index.php
+#ErrorDocument 404 http://localhost:8080/horseFarm/php/view/index.php
 # Redirige vers l'index en cas d'erreur 403 ou 404 (si localhost configuré sur le port 80, par défaut)
-#ErrorDocument 403 http://localhost/horseFarm/php/view/index.php
-#ErrorDocument 404 http://localhost/horseFarm/php/view/index.php
+ErrorDocument 403 http://localhost/horseFarm/php/view/index.php
+ErrorDocument 404 http://localhost/horseFarm/php/view/index.php

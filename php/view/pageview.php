@@ -15,7 +15,7 @@ class Pageview {
             <form id="formula" class="col formulaire s10 push-s1" action="connexion.php" method="POST">
 
                 <!-- Titre de la carte -->
-                <div class="card-header"> <h2>Inscription</h2></div>
+                <div class="card-header"> <h2>Connexion</h2></div>
                 <!-- Fin titre -->
 
                 <!-- Contenu card -->
