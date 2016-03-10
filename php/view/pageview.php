@@ -62,15 +62,27 @@ class Pageview
             <title><?php echo $title;?></title>
 
             <!--Import Roboto Font-->
-            <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
+            <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
             <!--Import Google Icon Font-->
-            <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
             <!--Import materialize.css-->
             <link type="text/css" rel="stylesheet" href="../../vendor/css/materialize.min.css"  media="screen,projection"/>
 
             <!--Let browser know website is optimized for mobile-->
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         </head>
+        <?php
+    }
+
+    /**
+     * Includes all javascript's links needed by the pages.
+     **/
+    public function showJavaLinks() {
+        ?>
+        <!--Import jQuery before materialize.js-->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+        <script type="text/javascript" src="../../vendor/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../../js/showmessage.js"></script>
         <?php
     }
 

@@ -6,21 +6,26 @@
  * Time: 15:08
  */
 
-include_once('./pageview.php');
+include_once('pageview.php');
 
 $pageView = new PageView();
 ?>
 
 <!DOCTYPE html>
-  <html>
+<html>
     <body>
 
-    <?php
-        $pageView->showHead("Connexion");
-        $pageView->showConnexion();
-    ?>
+        <?php
+            $pageView->showHead("Connexion");
+            $pageView->showConnexion();
+        ?>
 
-<!-- FIN CONTAINER -->
+        <footer>
+            <?php
+                $pageView->showJavaLinks();
+            ?>
+            <script>showmessage('formula');</script>
+        </footer>
 
-</body>
+    </body>
 </html>
