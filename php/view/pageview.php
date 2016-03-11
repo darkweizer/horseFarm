@@ -67,7 +67,7 @@ class Pageview {
             <!--Import Google Icon Font-->
             <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
             <!--Import materialize.css-->
-            <link type="text/css" rel="stylesheet" href="../../vendor/css/materialize.min.css"  media="screen,projection"/>
+            <link type="text/css" rel="stylesheet" href="../../vendor/materialize/css/materialize.min.css"  media="screen,projection"/>
             <!--Import style.css-->
             <link type="text/css" rel="stylesheet" href="../../css/style.css"  media="screen,projection"/>
 
@@ -84,8 +84,8 @@ class Pageview {
     public function showJavaLinks() {
         ?>
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../../vendor/jquery/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../../vendor/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="../../js/showmessage.js"></script>
         <?php
     }
