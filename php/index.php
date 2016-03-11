@@ -78,7 +78,7 @@ and open the template in the editor.
 		<script src="../js/Ajax.js" ></script>
 		<script src="../js/filterHorse.js" ></script>
 		<!-- Framework Materialize -->
-		<script type="text/javascript" src="../vendor/jquery/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="../vendor/jquery/jquery-2.2.1.min.js"></script>
 		<script type="text/javascript" src="../vendor/materialize/js/materialize.min.js"></script>
 
 	</body >

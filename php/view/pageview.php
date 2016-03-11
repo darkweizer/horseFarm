@@ -9,14 +9,15 @@
 class Pageview {
     public function showConnexion() {
         ?>
-        <div class="col valign-wrapper">
+        <div class="container row">
             <!-- Debut card -->
-            <div id="content" class="card-panel inscription col m4 push-m4 s12 center-align">
-                <!-- Formulaire -->
-                <form id="formula" class="col formulaire s10 push-s1" action="connexion.php" method="POST">
+            <div id="content" class="card-panel col s12 m8 l6 offset-m2 offset-l3 center-align">
+                <!-- Titre de la carte -->
+                <div class="card-header center-align"> <h2>Connexion</h2></div>
 
-                    <!-- Titre de la carte -->
-                    <div class="card-header"> <h2>Connexion</h2></div>
+                <!-- Formulaire -->
+                    <form id="formula" class="col s10 push-s1" action="connexion.php" method="POST">
+
                     <!-- Fin titre -->
 
                     <!-- Contenu card -->
@@ -84,7 +85,7 @@ class Pageview {
     public function showJavaLinks() {
         ?>
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="../../vendor/jquery/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="../../vendor/jquery/jquery-2.2.1.min.js"></script>
         <script type="text/javascript" src="../../vendor/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="../../js/showmessage.js"></script>
         <?php
