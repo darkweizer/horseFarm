@@ -1,2 +1,4 @@
 .idea/
 
+# Pour palier le problème de port différent en local
+.htaccess

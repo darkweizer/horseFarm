@@ -864,6 +864,10 @@ para la ventama modal
 	position: relative;
 }
 
+#titlelistaprov h4 {
+	margin: 0;
+}
+
 /*CAJA DE background-size: QUEDA Y BOTON DE AGREGAR*/
 #cajabusqueda{
 	padding-bottom: 5px;
