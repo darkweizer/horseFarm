@@ -12,6 +12,7 @@ and open the template in the editor.
 		<title>HorseFarm</title>
 		<link rel="stylesheet" type="text/css" href="../css/estylo.css" media="screen" />
 	</head>
+
 	<body text="black" bgcolor="#7F7226" link="black" vlink="black" alink="black">
 		<div id="logo">
 			<img src="../img/logo.png" />
@@ -42,9 +43,10 @@ and open the template in the editor.
 		</div>
 
 		<div id="lista"><?php include 'objetos.php';?></div>
+
 		<footer id="foter">This is a test of horseFarm</footer>
 
-
+		<!-- Formulaire d'ajout (div cachée tant qu'on ne clique pas sur le bouton +(bottonadd) ) -->
 		<div id="modal1" class="modalmask">
 			<div class="modalbox movedown">
 				<div id="titleformreg">
