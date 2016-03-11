@@ -24,7 +24,6 @@ and open the template in the editor.
 
 			<!--Import autre(s) .css-->
 		<link type="text/css" rel="stylesheet" href="../css/estylo.css" media="screen" />
-		<link type="text/css" rel="stylesheet" href="../css/style.css"  media="screen,projection"/>
 
 		<!--Let browser know website is optimized for mobile-->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
