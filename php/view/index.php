@@ -16,7 +16,7 @@ $pageView = new PageView();
     <body>
 
         <?php
-            $pageView->showHead("Connexion");
+            $pageView->showHead("Connexion - HorseFarm");
             $pageView->showConnexion();
         ?>
 

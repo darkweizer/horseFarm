@@ -1,4 +1,4 @@
-html {
+html, .waves-effect.waves-color .waves-ripple {
     background-color: #f2e5cd;
 }
 
@@ -11,3 +11,8 @@ html {
 #result span{
     color: red;
 }
+
+/* Ne fonctionne pas...
+.waves-color input[type="submit"]:active {
+    color: #607d8b;
+}*/

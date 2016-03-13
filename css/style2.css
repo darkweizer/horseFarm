@@ -1,0 +1,13 @@
+
+#logo img {
+    background-color: white;
+    width: 10%;
+    height: auto;
+    opacity: .5;
+    transition: all 0.5s linear 0s;
+}
+
+#bottonadd img {
+    width: 35px;
+    height: 35px;
+}

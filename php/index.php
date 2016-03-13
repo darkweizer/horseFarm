@@ -1,11 +1,4 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-
-
 
 <html>
 	<head>
@@ -16,32 +9,29 @@ and open the template in the editor.
 		<!--Import Google Icon Font-->
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
 		<!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="../vendor/materialize/css/materialize.min.css"  media="screen,projection"/>
+		<!--Import autre(s) .css-->
+		<link type="text/css" rel="stylesheet" href="../css/style2.css" media="screen" />
 
-<!--	LIGNE A AJOUTER POUR UTILISER MATERIALIZE
-		LIGNE A AJOUTER POUR UTILISER MATERIALIZE
-		LIGNE A AJOUTER POUR UTILISER MATERIALIZE
-	        <link type="text/css" rel="stylesheet" href="../vendor/materialize/css/materialize.min.css"  media="screen,projection"/>-->
-
-			<!--Import autre(s) .css-->
-		<link type="text/css" rel="stylesheet" href="../css/estylo.css" media="screen" />
-
-		<!--Let browser know website is optimized for mobile-->
+		<!-- Laisse le navigateur savoir si le site est optimisé pour mobile -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	</head>
 
-	<body text="black" bgcolor="#7F7226" link="black" vlink="black" alink="black">
-
+	<body>
+			<!-- Logo -->
 			<div id="logo">
 				<img src="../img/logo.png" />
 				<div id="user" class="datos"></div>
 			</div>
+
+			<!-- Menu de navigation (entre les tables) -->
 			<header id="header">
 				<div>
 					<nav>
 						<ul>
 							<li><a href="index.php">Accueil</a></li>
 							<li><a href="">Chevaux</a></li>
-							<li><a href="">'Objets'</a></li>
+							<li><a href="">'Autres objets'</a></li>
 
 							<li><a href="index.php">À propos</a></li>
 						</ul>
@@ -51,19 +41,22 @@ and open the template in the editor.
 
 			<div id="titlelistaprov">
 				<h4>Chevaux</h4>
+				<!-- Barre de recherche -->
 				<div id="cajabusqueda">
 					<input id="filter" onkeyup="listafiltroprov()" type="text" placeholder="Search..." />
 				</div>
+				<!-- Bouton d'ajout de tuple ; fait apparaître le formulaire de création -->
 				<div id="bottonadd">
 					<a href="#modal1"><img src="../img/addprov.png"></a>
 				</div>
 			</div>
 
-			<div id="lista"><?php include 'objetos.php';?></div>
+			<!-- Liste des objets récupérés en BD -->
+			<div id="lista" style="background-color: #00acc1; min-height: 500px;"><h5>Liste des objets...</h5><?php /*include 'objetos.php';*/?></div>
 
 			<footer id="foter">This is a test of horseFarm</footer>
 
-			<!-- Formulaire d'ajout (div cachée tant qu'on ne clique pas sur le bouton +(bottonadd) ) -->
+			<!-- Formulaire de création (div cachée tant qu'on ne clique pas sur le bouton + (#bottonadd) ) -->
 			<div id="modal1" class="modalmask">
 				<div class="modalbox movedown">
 					<div id="titleformreg">

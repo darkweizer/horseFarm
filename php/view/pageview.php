@@ -43,7 +43,7 @@ class Pageview {
 
 
                     <!-- bouton s'inscrire -->
-                    <div class="card-action bouton-connection">
+                    <div class="card-action waves-effect waves-color">
                         <input class="btn blue-grey center-align" type="submit" value="Se connecter"/>
                     </div>
 
