@@ -21,62 +21,102 @@
 	</head>
 
 	<body>
-			<!-- Logo -->
-			<div id="logo">
-				<img src="../img/logo.png" />
-				<div id="user" class="datos"></div>
-			</div>
 
-			<!-- Menu de navigation (entre les tables) -->
-			<header id="header">
-				<div>
-					<nav>
-						<ul>
-							<li><a href="index.php">Accueil</a></li>
-							<li><a href="">Chevaux</a></li>
-							<li><a href="">'Autres objets'</a></li>
+		<div class="row">
+			<header class="col l10 offset-l2">
+				<nav class="top-nav teal">
+					<div class="container row">
+						<div class="col nav-wrapper"><h4 class="page-title">Chevaux</h4></div>
+					</div>
+				</nav>
+				<div class="container"><a href="#" data-activates="nav-mobile" class="button-collapse top-nav full hide-on-large-only"><i class="mdi-navigation-menu"></i></a></div>
+				<ul id="nav-mobile" class="side-nav fixed">
 
-							<li><a href="index.php">À propos</a></li>
-						</ul>
-					</nav>
-				</div>
+					<li id="logo" class="logo">
+						<a id="logo-container" class="brand-logo">
+							<img src="../img/logo.png" />
+						</a>
+					</li>
+
+					<li class="search">
+						<div class="row no-margin">
+							<div class="col l9 search-wrapper">
+								<!-- Barre de recherche -->
+								<div id="cajabusqueda">
+									<input id="filter" onkeyup="listafiltroprov()" type="text" placeholder="Recherche" />
+								</div>
+							</div>
+							<i class="col l3 material-icons">search</i>
+						</div>
+					</li>
+
+					<li>
+						<li><a href="index.php">Accueil</a></li>
+						<li><a href="">Chevaux</a></li>
+						<li><a href="">'Autres objets'</a></li>
+						<li><a href="">'Autres objets'</a></li>
+						<li><a href="">'Autres objets'</a></li>
+						<li><a href="">'Autres objets'</a></li>
+						<li><a href="">'Autres objets'</a></li>
+						<li><a href="">'Autres objets'</a></li>
+						<li><a href="">'...'</a></li>
+					</li>
+				</ul>
 			</header>
+		</div>
 
-			<div id="titlelistaprov">
-				<h4>Chevaux</h4>
-				<!-- Barre de recherche -->
-				<div id="cajabusqueda">
-					<input id="filter" onkeyup="listafiltroprov()" type="text" placeholder="Search..." />
-				</div>
-				<!-- Bouton d'ajout de tuple ; fait apparaître le formulaire de création -->
-				<div id="bottonadd">
-					<a href="#modal1"><img src="../img/addprov.png"></a>
-				</div>
-			</div>
-
-			<!-- Liste des objets récupérés en BD -->
-			<div id="lista" style="background-color: #00acc1; min-height: 500px;"><h5>Liste des objets...</h5><?php /*include 'objetos.php';*/?></div>
-
-			<footer id="foter">This is a test of horseFarm</footer>
-
-			<!-- Formulaire de création (div cachée tant qu'on ne clique pas sur le bouton + (#bottonadd) ) -->
-			<div id="modal1" class="modalmask">
-				<div class="modalbox movedown">
-					<div id="titleformreg">
-						<p>Form Edicion</p>
-						<a href="#close" title="Close" class="close" onclick="borrar()">X</a><br>
+		<div class="row">
+			<main class="col l8 offset-l3">
+				<div class="row no-margin">
+					<div id="titlelistaprov" class="col l12">
+						<!-- Bouton d'ajout de tuple ; fait apparaître le formulaire de création -->
+						<div id="bottonadd">
+							<a href="#modal1"><img src="../img/addprov.png"></a>
+						</div>
 					</div>
 				</div>
-			</div>
 
-		<!-- Scripts -->
+				<!-- Liste des objets récupérés en BD -->
 
-		<script src="../js/Ajax.js" ></script>
-		<script src="../js/filterHorse.js" ></script>
-		<!-- Framework Materialize -->
-		<script type="text/javascript" src="../vendor/jquery/jquery-2.2.1.min.js"></script>
-		<script type="text/javascript" src="../vendor/materialize/js/materialize.min.js"></script>
+				<div class="row">
+					<div class="col s12 m12 l12">
+						<div class="card-panel teal">
+							<span class="white-text">
+
+<!--								-->
+								<div id="lista" class="teal" style="background-color: #fef1d9; min-height: 500px;"><h5>Liste des objets...</h5><?php /*include 'objetos.php';*/?></div>
+<!--								-->
+								<!--POUR AFFICHER LA LISTE DES OBJETS : Enlever commentaires PHP
+								<div id="lista"><?php /*include 'objetos.php';*/?></div>-->
+
+
+							</span>
+						</div>
+					</div>
+				</div>
+
+				<footer id="foter">This is a test of horseFarm</footer>
+
+				<!-- Formulaire de création (div cachée tant qu'on ne clique pas sur le bouton + (#bottonadd) ) -->
+				<div id="modal1" class="modalmask">
+					<div class="modalbox movedown">
+						<div id="titleformreg">
+							<p>Form Edicion</p>
+							<a href="#close" title="Close" class="close" onclick="borrar()">X</a><br>
+						</div>
+					</div>
+				</div>
+
+				<!-- Scripts -->
+
+				<script src="../js/Ajax.js" ></script>
+				<script src="../js/filterHorse.js" ></script>
+				<!-- Framework Materialize -->
+				<script type="text/javascript" src="../vendor/jquery/jquery-2.2.1.min.js"></script>
+				<script type="text/javascript" src="../vendor/materialize/js/materialize.min.js"></script>
+
+			</main>
+		</div>
 
 	</body >
 </html> 
-

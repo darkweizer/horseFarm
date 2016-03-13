@@ -1,13 +1,47 @@
 
-#logo img {
-    background-color: white;
-    width: 10%;
-    height: auto;
-    opacity: .5;
-    transition: all 0.5s linear 0s;
+html {
+    background-color: #fef1d9;
+}
+
+#logo {
+    padding-bottom: 80px;
+}
+
+#logo:hover {
+    background-color: transparent;
+}
+
+.search i {
+    margin-top: 23px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+/*.top-nav{
+    background-color: #00acc1;
+}*/
+
+.page-title {
+    line-height: 25px;
 }
 
 #bottonadd img {
     width: 35px;
     height: 35px;
 }
+
+
+/**********/
+/* Divers */
+/**********/
+
+.no-margin {
+    margin: 0;
+}
+
+/* Cache la scollbar veticale du menu de gauche */
+/*ul#nav-mobile {
+    overflow-y: hidden;
+}*/
