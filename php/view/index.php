@@ -13,10 +13,12 @@ $pageView = new PageView();
 
 <!DOCTYPE html>
 <html>
-    <body>
+    <?php
+        $pageView->showHead("Connexion - HorseFarm");
+    ?>
 
+    <body>
         <?php
-            $pageView->showHead("Connexion - HorseFarm");
             $pageView->showConnexion();
         ?>
 

@@ -63,6 +63,9 @@ class Pageview {
             <meta http-equiv="content-type" content="text/html; charset=utf-8" />
             <title><?php echo $title;?></title>
 
+            <!-- Import favicon -->
+            <link rel="icon" type="image/png" href="../../img/logo.png" />
+
             <!--Import Roboto Font-->
             <link href='https://fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'/>
             <!--Import Google Icon Font-->
