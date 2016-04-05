@@ -1,5 +1,5 @@
 <?php
-$mysqli = new mysqli("localhost", "root", "", "horseFarm");
+$mysqli = new mysqli("139.124.187.178", "root", "", "horseFarm");
 $mysqli->query("SET NAMES 'utf8'");
 
 if($mysqli->connect_errno){

@@ -9,14 +9,15 @@
 class Pageview {
     public function showConnexion() {
         ?>
-        <div class="col valign-wrapper">
+        <div class="container row">
             <!-- Debut card -->
-            <div id="content" class="card-panel inscription col m4 push-m4 s12 center-align">
-                <!-- Formulaire -->
-                <form id="formula" class="col formulaire s10 push-s1" action="connexion.php" method="POST">
+            <div id="content" class="card-panel col s12 m8 l6 offset-m2 offset-l3 center-align">
+                <!-- Titre de la carte -->
+                <div class="card-header center-align"> <h2>Connexion</h2></div>
 
-                    <!-- Titre de la carte -->
-                    <div class="card-header"> <h2>Connexion</h2></div>
+                <!-- Formulaire -->
+                    <form id="formula" class="col s10 push-s1" action="connexion.php" method="POST">
+
                     <!-- Fin titre -->
 
                     <!-- Contenu card -->
@@ -67,7 +68,7 @@ class Pageview {
             <!--Import Google Icon Font-->
             <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
             <!--Import materialize.css-->
-            <link type="text/css" rel="stylesheet" href="../../vendor/css/materialize.min.css"  media="screen,projection"/>
+            <link type="text/css" rel="stylesheet" href="../../vendor/materialize/css/materialize.min.css"  media="screen,projection"/>
             <!--Import style.css-->
             <link type="text/css" rel="stylesheet" href="../../css/style.css"  media="screen,projection"/>
 
@@ -84,8 +85,8 @@ class Pageview {
     public function showJavaLinks() {
         ?>
         <!--Import jQuery before materialize.js-->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-        <script type="text/javascript" src="../../vendor/js/materialize.min.js"></script>
+        <script type="text/javascript" src="../../vendor/jquery/jquery-2.2.1.min.js"></script>
+        <script type="text/javascript" src="../../vendor/materialize/js/materialize.min.js"></script>
         <script type="text/javascript" src="../../js/showmessage.js"></script>
         <?php
     }

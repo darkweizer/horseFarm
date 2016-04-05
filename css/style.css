@@ -1,14 +1,13 @@
 html {
-    background-color: #ccc;
+    background-color: #f2e5cd;
+}
+
+#content {
+    background-color: #eee;
+    margin-top: 15%;
+    padding: 0 11% 3% 11%;
 }
 
 #result span{
     color: red;
 }
-
-#content {
-    background-color: #eee;
-    margin: 9% auto;
-    padding: 0 11% 3% 11%;
-}
-
