@@ -6,11 +6,13 @@
  * Date: 23/11/2015
  * Time: 14:59
  */
+$name='horseFarm';
+$password='';
 function connect($name, $password)
 {
 	try{
 
-		$db = new PDO('mysql:host=139.124.187.178;dbname=', $name, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
+		$db = new PDO('mysql:host=localhost;dbname=', $name, $password, array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
 		return $db;
 
 	}

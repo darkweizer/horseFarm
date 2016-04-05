@@ -5,7 +5,7 @@
 			$contador=0;
 			$numPaginador=1;
 			$paginador="<a onclick='paginacionHorse(this)' id='0' href='#'>".$numPaginador."</a>";
-			$breack=10;
+			$breack=5;
 
 			include 'conection.php';
 			$mysqli->real_query("select id_horse, name, race, description, general_state from horse");
@@ -18,7 +18,7 @@
 				if($contador==$breack){
 						$numPaginador++;
 						$paginador.="<a onclick='paginacionHorse(this)' id='".$breack."' href='#'>".$numPaginador."</a>";
-						$breack+=10;
+						$breack+=5;
 					}//end if
 				}//end while
 
@@ -35,11 +35,11 @@
 
 			
 			$contador=0;
-			$breack=10;
+			$breack=5;
 			include 'conection.php';
 			$mysqli->real_query("
 		select id_horse, name, race, description, general_state from horse
-		limit ".$inicio.",10;
+		limit ".$inicio.",5;
 
 
 				");
