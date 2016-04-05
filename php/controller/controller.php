@@ -5,13 +5,21 @@
  * Date: 10/03/2016
  * Time: 15:41
  */
+
+include_once( '../model/dblogin.php');
+
 class Controller
 {
     public function controlConnexion(){
         if(!empty($_POST['id']) && !empty($_POST['passe'])) {
-            $_POST['id'] = htmlspecialchars($_POST['id']);
-            $_POST['passe'] = htmlspecialchars($_POST['passe']);
-            $this->showMessage("identifiant correcte", "ok");
+            //$this->showMessage("test");
+            $username = htmlspecialchars($_POST['id']);
+            $password = htmlspecialchars($_POST['passe']);
+            if(loginConnection($username, $password))
+            {
+                $this->showMessage("identifiant correcte", "ok");
+            }
+            $this->showMessage("identifiant incorrecte");
         }
         else {
             $this->showMessage("Veuillez entrer tous les champs.");
